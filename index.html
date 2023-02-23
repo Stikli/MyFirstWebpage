@@ -2,39 +2,194 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Let's practice</title>
-    <link rel="stylesheet" href="webpagestyle.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Roboto&display=swap" rel="stylesheet">
+    <title>Welcome</title>
+    <style>
+      body {
+        background-color: #BDCDD6;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto", Arial, sans-serif;
+      }
+      
+      header {
+      background-color: #6096B4;
+      color: white;
+      padding-bottom: 20px;
+      width: 80%;
+      margin: auto;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 50px;
+        font-family: "Gloria Hallelujah", Arial, Helvetica, sans-serif;
+        text-align: center;
+      }
+
+      .monogram-logo {
+        height: 100px;
+        position: relative;
+        top: 30px;
+        margin-right: 40px;
+      }
+
+      h1 {
+        font-size: 50px;
+        text-align: center;
+        margin-top: 5vh;
+        margin-bottom: 10vh;
+      }
+      
+      .p-description {
+        text-align: center;
+        font-size: 35px;
+      }
+      
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+      
+      .card {
+        width: 25%;
+        min-width: 300px;
+        height: 25rem;
+        background-color: #EEE9DA;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px #888;
+        margin: 20px;
+        text-align: center;
+        padding: 20px;
+        transition: transform 1s;
+      }
+
+      .card:hover {
+        -webkit-transform: scale(1.2);
+      }
+      
+      .card-img {
+        width: 50%;
+        object-fit: cover;
+      }
+      
+      .card h2 {
+        font-size: 1rem;
+        margin: 20px 0;
+      }
+      
+      .card p {
+        font-size: 18px;
+        color: #333;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+      
+      footer {
+        background-color: #6096B4;
+        color: white;
+        font-weight: bold;
+        padding: 20px;
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+      }
+
+      .main-content {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+      }
+
+      .about-my-work {
+        font-size: 50px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+
+      .first-rate-p {
+        font-size: 25px;
+        margin-bottom: 80px;
+      }
+
+      .contacts {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+      }
+
+      .contact-icon {
+        width: 15%;
+        margin: 40px;
+      }
+    </style>
   </head>
   <body>
-    <div class="header">
-      <div class="monogram">
-        <div>
-          <img class="nb-logo" src="photos/monogram.png">
-        </div>
-      </div>
+    <header>
+      <h1><img src="photos/monogram.png" class="monogram-logo" alt="NB Monogram">NB Design</h1>
+    </header>
 
-      <div class="menu-bar">
-        <button class="about-me">About me</button>
-        <button class="climbing">Climbing</button>
-        <button class="contact">Contanct</button>
+    <h1>
+      Welcome to my Page
+    </h1>
+    <p class="p-description">
+      My name is Balázs<br>
+      I'm a self-taught webdeveloper
+    </p>
+    
+    
+    <div class="container">
+      <div class="card">
+        <img src="photos/climber.png" class="card-img" alt="Climbing icon">
+        <h2>My hobbies</h2>
+        <p>Some text about the card. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="card">
+        <img src="photos/programming.png" class="card-img" alt="Programming icon">
+        <h2>Programming skills</h2>
+        <p>Some text about the card. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="card">
+        <img src="photos/engineer.png" class="card-img" alt="Contact icon">
+        <h2>My work background</h2>
+        <p>Some text about the card. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
     </div>
-    <div class="w3schools-container">
-      <button class="w3schools-button" onclick="window.open('https://www.w3schools.com/');">W3<br>Schools</button><br>
-      <p2>"For tips and tricks"</p2>
+
+    <div class="main-content">
+      <h2 class="about-my-work"> A brief introduction about my works</h2>
+      <p class="first-rate-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
-    <div class="youtube-container">
-      <button class="youtube-button" onclick="window.open('https://www.youtube.com/');">YouTube</button><br>
-      <p2>"For videos and tutorial"</p2>
+
+    <div class="contacts">
+      <img src="photos/contacts.png" class="contact-icon" alt="Contact icon">
+      <p class="first-rate-p">
+        Feel free to contact me if you are interested in employing me<br>
+        LinkedIn profile:<br>
+        Github link:
+      </p>
     </div>
-    <div class="endcredit">
-      <p class="endcredit-text">Thank you for visiting my website. If you have any suggestions feel free to contact me :)</p><br>
-      <a href="https://www.instagram.com/" target="_blank">
-        <img class="instagram-button" src="photos/instagram-icon.png">
-      </a>
-      <a href="https://www.facebook.com/" target="_blank">
-        <img class="facebook-button" src="photos/facebook-icon.png">
-      </a>
-    </div>
+    
+    <footer>
+      <p class="p-copyright">Copyright &copy; 2023</p>
+    </footer>
   </body>
 </html>
